@@ -7,14 +7,26 @@
       href="https://fonts.googleapis.com/css?family=Antic+Slab"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="snake.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Snake Game</title>
+    <script defer type="module" src="script.js"></script>
   </head>
-  <script defer type="module" src="snake.js"></script>
   <body>
-    <section>
-      <div id="score">0</div>
-      <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <section class="section-main">
+      <section class="section-game">
+        <div class="score">0</div>
+        <canvas class="gameCanvas" width="300px" height="300px"></canvas>
+      </section>
+      <section class="section-controls">
+        <div class="controls">
+          <button class="hidden">1</button>
+          <button data-direction="up">&#8593;</button>
+          <button class="hidden">3</button>
+          <button data-direction="left">&#8592;</button>
+          <button data-direction="down">&#8595;</button>
+          <button data-direction="right">&#8594;</button>
+        </div>
+      </section>
     </section>
   </body>
 </html>

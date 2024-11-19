@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Antic Slab";
+  color: #343a40;
+  border-bottom: 10px solid #087f5b;
+}
+
+.section-main {
+  height: 100vh;
+  padding: 4.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-game {
+  /* max-width: 120rem; */
+
+  /* width: 10rem; */
+  /* margin: 0 50rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: auto;
+}
+
+.score {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.gameCanvas {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Limits the canvas width */
+  max-height: 300px; /* Limits the canvas height */
+  aspect-ratio: 1/1;
+  /* border: 2px solid #343a40; Optional: add border for visibility */
+}
+
+.section-controls {
+  width: auto;
+  overflow: hidden;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.controls button {
+  padding: 1.6rem; /* Reduced padding to fit */
+  max-width: 100%; /* Limits button width to container */
+  max-height: 100%; /* Limits button height to container */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  background-color: yellow; /* Color for the lit-up effect */
+  box-shadow: 0 0 10px yellow;
+}
+/* #gameCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score {
+  text-align: center;
+  font-size: 140px;
+  font-family: "Antic Slab", serif;
+} */
